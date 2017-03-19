@@ -15,10 +15,17 @@
 <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <!-- Optional Bootstrap theme -->
     <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="reset.css">
+
+
+  <!-- Jquery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     </head>
 <body>
     
-    <nav role="navigation" class="navbar navbar-inverse navbar-fixed-top" style="background:black">
+    <nav role="navigation" class="navbar navbar-inverse " style="background:black">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
         <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
@@ -47,80 +54,87 @@
             </div>
         </form>
         <ul class="nav navbar-nav navbar-right">
-            <li><a href="#">Login</a></li>
-             <li><a href="#">SignUp</a></li>
+            <li><button id="myBtn">Sign Up</button></li>
             <li><button class="cart">CART</button></li>
         </ul>
+        <div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+   <div class="wrap">
+       
+        <!---------------------------------->
+        <div class="oauth">
+
+            <a href="#"><div class="logo fb">
+            <i class="fa fa-facebook"></i>
+            </div></a>
+            
+            <a href="#"><div class="logo twit">
+            <i class="fa fa-twitter"></i>
+            </div></a>
+            
+            <h1 class="headline">Or signup with email</h1>
+        </div>
+        <!---------------------------------->
+        <form>
+        <div class="regular">
+                <div class="field">
+                    <input type="text" class="input" placeholder="Username">
+                </div>
+                
+                <div class="field">
+                    <input type="email" class="input" placeholder="Email">
+                </div>
+                
+                <div class="field">
+                     <input type="password" class="input"  placeholder="Password">
+                </div>
+         </div> 
+                <div class="field">
+                    <input type="submit" value="SignUp" pattern=".{6,26}" class="submit" required title="6 to 26 characters">
+                </div>
+       
+        </form>
+        
+            <h1 class="footer">Already a Member?
+                <span><a href="#">Log In</a></span>
+            </h1>
     </div>
+    
+  </div>
+
+</div>
         <div id="category" class="category-list">
         <ul class="nav navbar-nav">
          <li class="menu1">Electronics&nbsp; <i class="fa fa-angle-down" aria-hidden="true"></i>  
-                <ul class="submenu">
-                <li><a href="#">Mobiles</a></li>
-                <li><a href="#">Headphones</a></li>
-                <li><a href="#">PC's & Laptops</a></li>
-                <li><a href="#">Mobile Accesories </a></li>
-                <li><a href="#">PC's Accesories </a></li>
-                </ul>
+              
         </li>
         <li class="menu1">Appliances&nbsp; <i class="fa fa-angle-down"  aria-hidden="true"></i>
-                <ul class="submenu">
-                <li><a href="#">Kitchen Accesories</a></li>
-                <li><a href="#">Televisions</a></li>
-                <li><a href="#"> Small Home Appliances</a></li>
-                <li><a href="#">Buying Guides </a></li>
-                <li><a href="#">Health Care Appliances</a></li>
-                </ul>
+              
         </li>
         <li class="menu1">men&nbsp; <i class="fa fa-angle-down"  aria-hidden="true"></i>
-                <ul class="submenu">
-                <li><a href="#">T-Shirts</a></li>
-                <li><a href="#">Shirts</a></li>
-                <li><a href="#">Tousers</a></li>
-                <li><a href="#">Pants</a></li>
-                <li><a href="#">Sneakers</a></li>
-                </ul>
+               
         </li>
         <li class="menu1">women &nbsp;<i class="fa fa-angle-down" aria-hidden="true"></i>
-                <ul class="submenu">
-                <li><a href="#">Western Wear</a></li>
-                <li><a href="#">FootWear</a></li>
-                <li><a href="#">Beauty & Grooming</a></li>
-                <li><a href="#">Featured</a></li>
-                <li><a href="#">Winter Wear</a></li>
-                </ul>
+               
         </li>   
         <li class="menu1">baby & kids &nbsp;<i class="fa fa-angle-down"  aria-hidden="true"></i>
-                <ul class="submenu">
-                <li><a href="#">Kid Toys</a></li>
-                <li><a href="#">Baby Care</a></li>
-                <li><a href="#">Kid's Footwear</a></li>
-                <li><a href="#">Boys' Footwear</a></li>
-                <li><a href="#">Baby Footwear</a></li>
-                </ul>
+               
         </li>
         <li class="menu1">home & furniture &nbsp;<i class="fa fa-angle-down"  aria-hidden="true"></i>
-                <ul class="submenu">
-                <li><a href="#">Kitchen & Dining</a></li>
-                <li><a href="#">Furniture</a></li>
-                <li><a href="#">Furnishing</a></li>
-                <li><a href="#">Home Decor</a></li>
-                <li><a href="#">Dining & Serving</a></li>
-                </ul>
+               
         </li>
         <li class="menu1">Books & more &nbsp;<i class="fa fa-angle-down"  aria-hidden="true"></i>
-                <ul class="submenu">
-                <li><a href="#">Books</a></li>
-                <li><a href="#">Gaming</a></li>
-                <li><a href="#">Automobiles</a></li>
-                <li><a href="#">Sports</a></li>
-                <li><a href="#">Movies & TV Shows</a></li>
-                </ul>
+             
         </li>
         <li class="menu1">offer zone</li>
         </ul>
         
         </div>
+    </div>
+        
 </nav>
     <div class="col-sm-12">
      <div class="quickly">
@@ -156,21 +170,23 @@
     <div class="container-fluid" id="Item-List">
         <h3>Top Selling</h3>
     <div class="row" id="top-itemcontainer">
-        
-         <div class="col-sm-3 col-md-2" id="item">
-             <div class="item-container" id="item">
-            <img src="https://n2.sdlcdn.com/imgs/d/m/d/Lenovo_Black_Canvas_Laptop_Bag_SDL251173173_8_f7700-a95ab.jpg" class="item-img">
-           <h4 class="item-catogery" style="font-family: 'Fjalla One', sans-serif;">Laptop Bags</h4>
-            <p  class="item-description">HP & Targus</p>
+        <div class="carousel">
+  <div class="holder">
+         
+       <div class="col-sm-3 col-md-2 " id="item">
+              <div class="item-container">
+            <img src="https://store.storeimages.cdn-apple.com/4974/as-images.apple.com/is/image/AppleInc/aos/published/images/M/L9/ML9D2/ML9D2?wid=445&hei=445&fmt=jpeg&qlt=95&op_sharpen=0&resMode=bicub&op_usm=0.5,0.5,0,0&iccEmbed=0&layer=comp&.v=1475173766642" class="item-img" >
+          <h4 class="item-catogery" style="font-family: 'Fjalla One', sans-serif;">Headphones</h4>
+            <p  class="item-description">Beats & more</p>
+        </div>
+        </div><div class="col-sm-3 col-md-2 " id="item">
+              <div class="item-container">
+            <img src="https://store.storeimages.cdn-apple.com/4974/as-images.apple.com/is/image/AppleInc/aos/published/images/M/L9/ML9D2/ML9D2?wid=445&hei=445&fmt=jpeg&qlt=95&op_sharpen=0&resMode=bicub&op_usm=0.5,0.5,0,0&iccEmbed=0&layer=comp&.v=1475173766642" class="item-img" >
+          <h4 class="item-catogery" style="font-family: 'Fjalla One', sans-serif;">Headphones</h4>
+            <p  class="item-description">Beats & more</p>
         </div>
         </div>
-         <div class="col-sm-3 col-md-2 " id="item">
-             <div class="item-container">
-            <img src="https://rukminim1.flixcart.com/image/400/400/backpack/4/g/f/ideallitresgreyandblue0-ideal-laptop-backpack-litres-grey-and-original-imaekwxbhxfmfcyz.jpeg?q=70" class="item-img" >
-           <h4 class="item-catogery" style="font-family: 'Fjalla One', sans-serif;">School Bags</h4>
-            <p  class="item-description">Best Designs</p>
-        </div>
-        </div>
+      
          <div class="col-sm-3 col-md-2 " id="item">
               <div class="item-container">
             <img src="https://store.storeimages.cdn-apple.com/4974/as-images.apple.com/is/image/AppleInc/aos/published/images/M/L9/ML9D2/ML9D2?wid=445&hei=445&fmt=jpeg&qlt=95&op_sharpen=0&resMode=bicub&op_usm=0.5,0.5,0,0&iccEmbed=0&layer=comp&.v=1475173766642" class="item-img" >
@@ -200,6 +216,8 @@
         </div>
         </div>
         </div>  
+        </div>
+        </div>
         </div>
     
     <div class="container-fluid">
@@ -605,7 +623,6 @@
   <a href="#" class="button next">Next</a>
              <a href="" class="btn btn-info">View All</a>
              </div>
-        
         </div>  
     </div>
     </div>
@@ -878,6 +895,7 @@
         </div>  
     </div>
     </div>
+    <hr>
     <div class="container-fluid">
     <div class="row">
     <div class="col-md-3">
@@ -920,18 +938,18 @@
     </div>
         </div>
         <div class="col-md-3">
-        <div class="subscribe"><div class="wrapper">
-  <div class="header">
-   
-    <p>We Will Let You Know About The New Products In Market.</p>
-  </div>
-  <div class="footer">
-    <form action="">
-      <input type="text" placeholder="Enter your email"/>
-    </form>
-    <button class="btn-submit">submit</button>
-  </div>
-</div></div>
+        <section id="container">
+	<div class="form">
+		<h2>Hi!</h2>
+		<p>Subscribe to our news letter</p>
+		<p>Trust us we hate spaming.</p>
+		<p>You will get delightful emails</p>
+		<form action="#" method="post">
+		<input type="text" name="email" placeholder="Type your email">
+		<input type="submit" name="submit" value="Subscribe">
+		</form>
+		</div>
+	</section>
         </div>
     </div>
     </div>
@@ -986,12 +1004,30 @@
                  <img src="Payment-Method.jpg" height="150px" width="40px" style="margin-top:20px;">
              </div>
         </div>
+    </div> 
     </div>
-    </div>
-    <p class="copyright">CopyRight@2017</p>
+    
+    <footer><a href="#" class="top"><i class="fa fa-arrow-circle-up" aria-hidden="true" style="font-size:50px;color:black"></i></a> <p class="copyright">CopyRight @ 2017</p></footer>
     <style>
-        .cart{
-            margin: 8px 8px 8px 60px;
+        
+        .top{
+	background-color: transparent;
+	bottom: 2em;
+	color: #fff;
+	visibility:inherit;
+	opacity:0.6;
+	padding:0px ;
+	position: fixed;
+	right: 1.5em;
+	text-decoration: none;
+}
+.top:hover{
+	opacity:1;
+	transition:1s;
+}
+        
+        .cart,#myBtn{
+            margin: 8px 8px 8px 30px;
             background-color: #135ead;
             padding:0px 25px 1px 25px;
             color:White;
@@ -1003,7 +1039,7 @@
             font-size:23px;
             
         }
-        .cart:hover{
+        .cart:hover,#myBtn:hover{
             background-color: white;
             color:#135ead;
         }
@@ -1029,60 +1065,11 @@
         }
         
         
-        .submenu {
-  background: black;
-  border-radius: 0px;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
-  left: -12px;
-  list-style: none;
-  margin: 0;
-  opacity: 0;
-  padding: 12px;
-  position: absolute;
-  top: 38px;
-  -webkit-transition: all 0.25s;
-  transition: all 0.25s;
-  visibility: hidden;
-  display: inline-block;
-  width: 180px;
-text-align: center;
-}
-
-.menu1:hover .submenu,
-.menu1-click.menu1-active .submenu {
-  opacity: 1;
-  top: 29px;
-  visibility: visible;
-}
-
-.menu1 .submenu:before,
-.menu1.submenu::before {
-  border-left: 6px solid transparent;
-  border-right: 6px solid transparent;
-  border-bottom: 6px solid white;
-  content: "";
-  height: 0;
-  left: 24px;
-  position: absolute;
-  top: -6px;
-  width: 0;
-}
-
-.submenu a {
-  color: white;
-  line-height: 1.2em;
-  padding: 5px 5px;
-   text-decoration: none;
-}
-
-.menu1 .submenu a:hover {
-   color:#8A8888; 
-}
-
+       
 .quickly{
   background: #F3F3F3;
   color:black;
-  margin:40px 0 0 0; 
+  margin:-20px 0 0 0; 
     width:100%;
     padding: 0px;
         }
@@ -1166,13 +1153,13 @@ section.slide:last-child {
   25% { opacity:1; }
   50% { opacity:0; }
 } 
- h4{
+            h4 {
             color:#005888;
             font-family: 'Fjalla One', sans-serif;
             text-align: center;
             font-size: 18px;
-     word-spacing: 5px;
-        }
+            word-spacing: 5px;
+            }
     
         .item-container p{
             color:#8F8F8F;
@@ -1187,8 +1174,9 @@ section.slide:last-child {
             padding: 5px;
             border: 1px solid #B2B2B2;
             border-radius: 3px;
+        
             background: white;
-             box-shadow: 5px 5px 2px #E9E9E9;
+            box-shadow: 5px 5px 2px #E9E9E9;
             -webkit-transition: all 200ms ease-in;
     -webkit-transform: scale(1); 
     -ms-transition: all 200ms ease-in;
@@ -1200,7 +1188,6 @@ section.slide:last-child {
            
         }
         .item-container:hover,.brand-container:hover,.season-container:hover,.Most-viewed:hover{
-
     z-index: 2;
     -webkit-transition: all 200ms ease-in;
     -webkit-transform: scale(1.2);
@@ -1221,16 +1208,12 @@ section.slide:last-child {
             margin-top:100px;
             padding: 10px;
         }
-        
-        
         .btn {
   -moz-transition: all, ease-in-out 0.5s;
   -o-transition: all, ease-in-out 0.5s;
   -webkit-transition: all, ease-in-out 0.5s;
-  transition: all, ease-in-out 0.5s;
-            
+  transition: all, ease-in-out 0.5s;          
 }
-
 .btn, .btn:focus {
   color: gray;
 }
@@ -1381,7 +1364,9 @@ section.slide:last-child {
             text-align: center;
              font-size:20px;
         }
-        
+        #item{
+            display: inline-block;
+        }
          .season-container img{
             width: 100%;
             height:200px;
@@ -1458,29 +1443,7 @@ section.slide:last-child {
             font-size:12px;
         }
         
-        .wrapper {
-  margin: auto;
-  background: #fff;
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  text-align: center;
-  border-radius: 5px;
-  overflow: hidden;
- 
-}
-.header {
-  padding: 10px 25px 0px 25px;
-  min-height: 150px;
-  background: url("https://cdn2.iconfinder.com/data/icons/social-media-network-fill-flat-icon/512/Gmail-2-128.png") no-repeat center 20px;  
-}
-
-.header p {
-  font-size: 13px;
-  color: black;
-    font-weight: bold;
-    padding-top:150px; 
-}
+       
 .footer {
   display: flex;
   justify-content: space-between;
@@ -1581,10 +1544,328 @@ section.slide:last-child {
             text-align: center;
             font-weight: bold;
         }
+        .carousel {
+  overflow: hidden;
+  padding: 8px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  border-radius: 5px;
+}
+.holder {
+  -webkit-animation: carousel 25s linear infinite;
+          animation: carousel 25s linear infinite;
+  white-space: nowrap;
+  will-change: transform;
+}
+.holder:hover {
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
+@-webkit-keyframes carousel {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  50% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+@keyframes carousel {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  50% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+  .modal {
+    display: none; /* Hidden by default */
+    /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 33.5%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    margin-left: 40%;
+ font-family: 'Harmattan', sans-serif;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+        
+        a, a:link {text-decoration:none;}
+.wrap {
+    margin:10 auto;
+    width:300px;
+    border:1px solid #ddd;
+    padding:20px;
+     font-family: 'Harmattan', sans-serif;
+    }
+/*============*/
+.oauth {
+    width:;
+    font-size:0em;
+    }
+    .logo {
+    width:50%;
+    height:80px;
+    display:inline-block;
+    text-align:center;
+    }
+    .fb{
+    background:#3b5998;/*#0267C1; */
+    }
+    .twit{
+    background:#00aced;;
+    }
+    .logo .fa {
+    font-size:24px;
+    line-height:80px;
+    color:white;
+    }
+    .headline, .footer {
+    text-align:center;
+    text-transform:capitalize;
+    color:#a0a0a0;
+    background:#eee;
+    }
+    .headline {
+    font-size:12px; 
+    margin:0;
+    line-height:34px;
+    }
+    .footer {
+        padding:0;
+        font-size:12px; 
+        margin-top:5px;
+        line-height:28px;
+        }
+        span a:link, a:visited {
+        text-decoration:none; 
+       
+        /*font-weight:lighter;*/
+        opacity:.8;
+        }
+     
+/*=================*/
+    form {margin:0;}
+    .field {
+     
+    }
+    .regular {padding:10px 0px}
+    input  {
+    width:100%;
+    color:#777;
+ font-family: 'Harmattan', sans-serif;
+    display:inline-block;
+    border:none;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    outline: none;
+    text-transform:uppercase;
+    }
+    input[type="email"], input[type="password"], input[type="text"] {
+    font-size:18px;
+    line-height:50px;
+    /*padding:10px 0px;*/
+    }
+    .field input[type="submit"]{
+    background:#0267C1;
+    text-align:center;
+    padding:10px 0px;
+    color:white;
+    font-size:24px;
+    width:100%;
+    cursor:pointer;
+    }
+
+::-webkit-input-placeholder {color: #bbb;}
+:-moz-placeholder { color:#bbb; opacity:1;}
+::-moz-placeholder {color:#bbb; opacity:1;}
+:-ms-input-placeholder {color:#bbb;}
+        
+        @import url(https://fonts.googleapis.com/css?family=Raleway);
+
+
+* {
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+#container {
+
+	width: 250px;
+	height: 250px;
+	margin-right:auto;
+	margin-left: auto;
+	
+	background: #1f1f1f;
+	padding:0;
+	overflow: hidden;
+	clear: both;
+	font-family: monospace;
+	border-radius: 2%;
+	text-align: center;
+	line-height: 1em;
+}
+
+.form {
+
+	margin: 40px 0;
+}
+
+.form h2, p {
+font-family: 'Harmattan', sans-serif;
+	font-size: 18px;	
+color:white;
+}
+
+
+.form input[type="text"] {
+
+	width: 230px;
+	height: 40px;
+	color: #135ead;
+	margin: 10px;
+	font-family: 'Harmattan', sans-serif;
+    letter-spacing: 3px;
+	background: transparent;
+    font-weight: 600;
+	border:none;
+	
+}
+
+
+
+.form input[type="text"]:hover, .form input[type="text"]:focus {
+
+	outline: 0;
+	border-bottom: 1px solid #888;
+	transition:all 0.5s ease-in;
+}
+
+::-webkit-input-placeholder {
+
+	text-align:center;
+
+}
+
+::-moz-placeholder {
+
+	text-align:center;
+	color: #fff;
+}
+:-ms-input-placeholder {
+	text-align:center;
+	color: #fff;
+}
+
+.form input[type="submit"] {
+
+	width: 200px;
+	height: 40px;
+	border-radius: 3px;
+	background: transparent;
+	color: #fff;
+	font-size: 20px;
+font-family: 'Harmattan', sans-serif;
+	border:2px solid #fff;
+    margin:0px;
+}
+
+.form input[type="submit"]:hover, #form input[type="submit"]:focus {
+
+	cursor: pointer;
+	background: #135ead;
+	color: white;
+	transition:all 0.4s linear;
+}
     </style>
-   <script src="js/jquery-1.11.3.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <script>
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on the button, open the modal 
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+    </script>
+
 <script>
+
+$(document).ready(function() {
+    var offset=250, // At what pixels show Back to Top Button
+    scrollDuration=300; // Duration of scrolling to top
+        $(window).scroll(function() {
+	    if ($(this).scrollTop() > offset) {
+                $('.top').fadeIn(500); // Time(in Milliseconds) of appearing of the Button when scrolling down.
+                } else {
+		$('.top').fadeOut(500); // Time(in Milliseconds) of disappearing of Button when scrolling up.
+		}
+	});
+
+	
+	$('.top').click(function(event) {
+	event.preventDefault();
+            $('html, body').animate({
+	        scrollTop: 0}, scrollDuration);
+                })
+	});
 
 </script>
     
