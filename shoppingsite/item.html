@@ -1,0 +1,937 @@
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Item Description Page</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Archivo+Narrow" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Harmattan" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Fjalla+One|PT+Sans+Narrow" rel="stylesheet">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <!-- Optional Bootstrap theme -->
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <!-- Jquery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+</head>
+
+<body>
+      
+    <nav role="navigation" class="navbar navbar-inverse " style="background:black">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+        <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a href="#" class="navbar-brand"><img src="logo.jpg" style="width:100px;height:50px"></a>
+    </div>
+    <!-- Collection of nav links, forms, and other content for toggling -->
+    <div id="navbarCollapse" class="collapse navbar-collapse">
+        <div class="navbarcolor">
+        <ul class="nav navbar-nav">
+           <li><a href="">Sell product</a></li>
+           <li><a href="">Advertise</a></li>
+           <li><a href="">gift-card</a></li>
+           <li><a href="">Customer Care</a></li>
+           <li><a href="">Track Your Order</a></li>
+           <li><a href=""><i class="fa fa-bell" color="white" aria-hidden="true" ></i></a> </li>
+        </ul>
+        </div>
+        <form role="search" class="navbar-form navbar-left">
+            <div class="form-group">
+            <input type="text" placeholder="Search" class="form-control">
+            </div>
+        </form>
+        <ul class="nav navbar-nav navbar-right">
+            <li><button id="myBtn">Sign Up</button></li>
+            <li><button class="cart">CART</button></li>
+        </ul>
+        <div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+   <div class="wrap">
+       
+        <!---------------------------------->
+        <div class="oauth">
+
+            <a href="#"><div class="logo fb">
+            <i class="fa fa-facebook"></i>
+            </div></a>
+            
+            <a href="#"><div class="logo twit">
+            <i class="fa fa-twitter"></i>
+            </div></a>
+            
+            <h1 class="headline">Or signup with email</h1>
+        </div>
+        <!---------------------------------->
+        <form>
+        <div class="regular">
+                <div class="field">
+                    <input type="text" class="input" placeholder="Username">
+                </div>
+                
+                <div class="field">
+                    <input type="email" class="input" placeholder="Email">
+                </div>
+                
+                <div class="field">
+                     <input type="password" class="input"  placeholder="Password">
+                </div>
+         </div> 
+                <div class="field">
+                    <input type="submit" value="SignUp" pattern=".{6,26}" class="submit" required title="6 to 26 characters">
+                </div>
+       
+        </form>
+        
+            <h1 class="footer">Already a Member?
+                <span><a href="#">Log In</a></span>
+            </h1>
+    </div>
+    
+  </div>
+
+</div>
+        <div id="category" class="category-list">
+        <ul class="nav navbar-nav">
+         <li class="menu1">Electronics&nbsp; <i class="fa fa-angle-down" aria-hidden="true"></i>  
+              
+        </li>
+        <li class="menu1">Appliances&nbsp; <i class="fa fa-angle-down"  aria-hidden="true"></i>
+              
+        </li>
+        <li class="menu1">men&nbsp; <i class="fa fa-angle-down"  aria-hidden="true"></i>
+               
+        </li>
+        <li class="menu1">women &nbsp;<i class="fa fa-angle-down" aria-hidden="true"></i>
+               
+        </li>   
+        <li class="menu1">baby & kids &nbsp;<i class="fa fa-angle-down"  aria-hidden="true"></i>
+               
+        </li>
+        <li class="menu1">home & furniture &nbsp;<i class="fa fa-angle-down"  aria-hidden="true"></i>
+               
+        </li>
+        <li class="menu1">Books & more &nbsp;<i class="fa fa-angle-down"  aria-hidden="true"></i>
+             
+        </li>
+        <li class="menu1">offer zone</li>
+        </ul>
+        
+        </div>
+    </div>
+        
+</nav>
+<div class="container">
+<div class="row">
+<div class="col-md-4" id="product-img">
+<div id='slider'>
+  <div id='images'>
+    <img src='https://s-media-cache-ak0.pinimg.com/564x/4f/4b/23/4f4b2317f821f2677ce369b1b9754c7b.jpg' id='1'/>
+    <img src='https://s-media-cache-ak0.pinimg.com/736x/4c/e3/cc/4ce3cc02570a898d92566c22d923eab7.jpg' id='2'/>
+    <img src='https://cache.mrporter.com/images/products/813346/813346_mrp_in_xxl.jpg' id='3'/>
+     <img src='http://www.arsuji.com/sport/wp-content/uploads/2015/01/nike-t-shirts-10.jpg' id='4'/>  
+  </div>
+  <div id='controls'>
+    <div>
+      <button id='previous'><i class="fa fa-arrow-left" aria-hidden="true" style="font-size=50"></i></button>
+    <button id='next'><i class="fa fa-arrow-right" aria-hidden="true" style="font-size=50"></i></button>
+    </div>
+    <button id='toggle-fullscreen'>
+      <i class='material-icons'><img src="images/zoom.png"></i>
+    </button>
+  </div>
+</div>
+</div>
+    <div class="col-md-8">
+      
+   <div class="col-md-6" id="Product-Name">
+       <img src="" id="">
+       <h2>Nike T-shirt</h2>
+          <div class="price-rate">
+       <label id="price"><b style="color:white;background:#135ead;padding:0px 5px 0px 5px;border-top-right-radius:15px;border-bottom-left-radius:15px;margin:2px;">Price :</b> 452/-</label>
+    
+   &nbsp;&nbsp;&nbsp; <label id="rating" style="color:#135ead;">Rating:</label>
+    <input class="star star5" id="radio5" type="radio" name="rating" value="5">
+    <label class="star star5" for="radio5"></label>
+
+    <input class="star star4" id="radio4" type="radio" name="rating" value="4">
+    <label class="star star4" for="radio4"></label>
+
+    <input class="star star3" id="radio3" type="radio" name="rating" value="3">
+    <label class="star star3" for="radio3"></label>
+
+    <input class="star star2" id="radio2" type="radio" name="rating" value="2">
+    <label class="star star2" for="radio2"></label>
+
+    <input class="star star1" id="radio1" type="radio" name="rating" value="1">
+    <label class="star star1" for="radio1"></label>
+</div>
+       <br>
+       <ul style="list-style:none">
+       <li><label  style="font-size:20px">size:</label>
+            <select style="padding:0px 0px 0px 5px;margin-left:35px;">
+                <option>Small(S)</option>
+                <option>Medium(M)</option>
+                <option>Large(L)</option>
+                <option>Extra Large(XL)</option>
+            </select>
+           <a href"">Size Chart</a>
+           </li>
+           
+             <li><label  style="font-size:20px">Color:</label>
+            <select style="padding:0px 10px 0px 10px;margin-left:20px;">
+                <option>BLACK</option>
+                <option>BLUE</option>
+                <option>GRAY</option>
+                <option>GREEN</option>
+                <option>Dark RED</option>
+            </select>
+           </li>
+           <li>
+              <ul style="list-style:none;float:left"> 
+            <lable style="font-size:20px;font-weight:bold;">Features:</lable>
+           <li>Fabric: Cotton</li>
+            <li>Slim Fit, Roll-up Sleeve</li>
+              <li>Collar Type: Point Collar</li>
+                <li>Pattern: Solid</li>
+                 <li>Set of 1</li>
+                   </ul>
+           </li>
+           <li><label>Seller:</label>RC (3.8)</li>
+           <br>
+       <li>
+           
+           
+           </li>
+            <li>
+           
+            <div class="sub-main">
+      <button class="button-two"><span><i class="fa fa-shopping-cart" aria-hidden="true" style="color:white;padding-right:5px"></i>Add To Cart</span></button>
+                <button class="button-two"><span><i class="fa fa-credit-card" aria-hidden="true" style="color:white;padding-right:5px"></i>Buy Now</span></button>
+    </div>
+                
+           
+           </li>
+           <li>
+           
+           </li>
+       </ul>
+       <br>
+       
+        </div>
+   <div class="col-md-6" id="Product-Desp">
+    <fieldset>
+        <legend style="font-family: 'Harmattan', sans-serif;font-size:40px;font-weight:bold;text-transform:uppercase;padding:5px;margin-bottom:15px">Product <b style="background:#135ead;padding:0px 3px 0px 3px;border-radius:5px;color:white;text-transform:lowercase;font-size:35px">Information</b></legend>
+       <ul style="list-style:none;">
+        <li><label style="font-size:20px">Brand:</label><img src="images/nike.png" width="85" height="85">
+           
+        </li>
+           
+           <li>
+               <label  style="font-size:20px">Special PriceDeal of the Day : </label>
+               <br>
+               <p>Men's Clothing Under ₹499 T&C</p>
+               
+           </li>
+           <li>
+           <label  style="font-size:20px">Special PriceDeal of the Day : </label>
+               <br>
+               <p>Extra 5% Off on Men's ClothingT&C</p>
+           
+           </li>
+           <li>
+            <label  style="font-size:20px">Special Deal : </label>
+               <br>
+               <p>Bank OfferExtra 5% off* on Axis Bank Buzz Credit Cards</p>
+           
+           </li>
+          
+        </ul>
+        
+       </fieldset>
+    </div>
+        </div>
+</div>
+</div>
+    <div class="container">
+<div class="page-header">
+  <h3 style="font-family: 'Harmattan', sans-serif;font-size:40px">Similar Products</h3>
+</div>
+
+<div class="row">
+<div class="col-xs-12">
+  <div class="carousel slide" id="myCarousel" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="item active">
+        <div class="row">
+          <div class="col-xs-3">
+           <div class="season-container">
+            <img src="https://s-media-cache-ak0.pinimg.com/736x/a6/99/b6/a699b64750807104538021b5691adab5.jpg" class="item-img" width="192" height="200">
+           <h4 class="item-catogery" style="font-family: 'Fjalla One', sans-serif;">Hand Bags</h4>
+            <p  class="item-offer">Minimum 50% Off</p>
+            <p  class="item-description">Hand Bags & More</p>
+            </div>
+          </div>
+            <div class="col-xs-3">
+            <div class="season-container">
+            <img src="http://www.reginele.ro/wp-content/uploads/2015/10/0ac07a0ab85e7c6ef62215c6407d4e61.jpg" class="item-img" width="192" height="200">
+           <h4 class="item-catogery" style="font-family: 'Fjalla One', sans-serif;">Hand Bags</h4>
+            <p  class="item-offer">Minimum 50% Off</p>
+            <p  class="item-description">Hand Bags & More</p>
+            </div>
+          </div>
+          <div class="col-xs-3">
+           <div class="season-container">
+            <img src="https://n1.sdlcdn.com/imgs/b/w/i/Rigo-Navy-Round-T-Shirt-SDL252591801-1-f1560.jpg" class="item-img" width="192" height="200">
+           <h4 class="item-catogery" style="font-family: 'Fjalla One', sans-serif;">Hand Bags</h4>
+            <p  class="item-offer">Minimum 50% Off</p>
+            <p  class="item-description">Hand Bags & More</p>
+            </div>
+          </div>
+          <div class="col-xs-3">
+            <div class="season-container">
+            <img src="https://img1.g-star.com/image/private/c_fill,f_auto,h_540,q_80/8760-2757-6385-F01.jpg" class="item-img" width="192" height="200">
+           <h4 class="item-catogery" style="font-family: 'Fjalla One', sans-serif;">Hand Bags</h4>
+            <p  class="item-offer">Minimum 50% Off</p>
+            <p  class="item-description">Hand Bags & More</p>
+            </div>
+          </div>
+             
+        </div>
+      </div>
+      <div class="item">
+        <div class="row">
+          <div class="col-xs-3">
+          <div class="season-container">
+            <img src="https://n2.sdlcdn.com/imgs/b/2/j/Leana-Black-V-Neck-T-SDL572440374-1-9bdf3.jpg" class="item-img" width="192" height="200">
+           <h4 class="item-catogery" style="font-family: 'Fjalla One', sans-serif;">Hand Bags</h4>
+            <p  class="item-offer">Minimum 50% Off</p>
+            <p  class="item-description">Hand Bags & More</p>
+            </div>
+          </div>
+          <div class="col-xs-3">
+          <div class="season-container">
+            <img src="http://lghttp.33667.nexcesscdn.net/80F42C/magento/media/catalog/product/cache/1/small_image/533x/040ec09b1e35df139433887a97daa66f/t/h/the-idle-man-asian-tky1-long-sleeve-t-shirt-black-1634909251793_714.jpg" class="item-img" width="192" height="200">
+           <h4 class="item-catogery" style="font-family: 'Fjalla One', sans-serif;">Hand Bags</h4>
+            <p  class="item-offer">Minimum 50% Off</p>
+            <p  class="item-description">Hand Bags & More</p>
+            </div>
+          </div>
+          <div class="col-xs-3">
+           <div class="season-container">
+            <img src="http://www.jetsetmorris.co.uk/images/T-Shirt%20Online/TOPMAN%20(6708536)%20White%20Solid%20Round%20Neck%20T-Shirt%20TO207MA68VDRINDFAS%20White.jpg" class="item-img" width="192" height="200">
+           <h4 class="item-catogery" style="font-family: 'Fjalla One', sans-serif;">Hand Bags</h4>
+            <p  class="item-offer">Minimum 50% Off</p>
+            <p  class="item-description">Hand Bags & More</p>
+            </div>
+          </div>
+          <div class="col-xs-3">
+            <div class="season-container">
+            <img src="http://www.tksportsworld.com/global/image/cache/data/polo%20mens/tee%20mens/upper-1-1200x1200.jpg" class="item-img" width="192" height="200">
+           <h4 class="item-catogery" style="font-family: 'Fjalla One', sans-serif;">Hand Bags</h4>
+            <p  class="item-offer">Minimum 50% Off</p>
+            <p  class="item-description">Hand Bags & More</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <button type="button" class="btn btn-primary btn-round btn-xs">
+        <span aria-hidden="true" class="glyphicon glyphicon-menu-left"></span>
+      </button>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <button type="button" class="btn btn-primary btn-round btn-xs">
+        <span aria-hidden="true" class="glyphicon glyphicon-menu-right"></span>
+      </button>
+    </a>
+  </div>
+</div>
+</div>
+  </div>
+    <div class="container">
+<div class="page-header">
+  <h3 style="font-family: 'Harmattan', sans-serif;font-size:40px">Recommended Products For You</h3>
+</div>
+
+<div class="row">
+<div class="col-xs-12">
+  <div class="carousel slide" id="myCarousel" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="item active">
+        <div class="row">
+          <div class="col-xs-3">
+          <div class="season-container">
+            <img src="https://n2.sdlcdn.com/imgs/b/2/j/Leana-Black-V-Neck-T-SDL572440374-1-9bdf3.jpg" class="item-img" width="192" height="200">
+           <h4 class="item-catogery" style="font-family: 'Fjalla One', sans-serif;">Hand Bags</h4>
+            <p  class="item-offer">Minimum 50% Off</p>
+            <p  class="item-description">Hand Bags & More</p>
+            </div>
+          </div>
+          <div class="col-xs-3">
+          <div class="season-container">
+            <img src="http://lghttp.33667.nexcesscdn.net/80F42C/magento/media/catalog/product/cache/1/small_image/533x/040ec09b1e35df139433887a97daa66f/t/h/the-idle-man-asian-tky1-long-sleeve-t-shirt-black-1634909251793_714.jpg" class="item-img" width="192" height="200">
+           <h4 class="item-catogery" style="font-family: 'Fjalla One', sans-serif;">Hand Bags</h4>
+            <p  class="item-offer">Minimum 50% Off</p>
+            <p  class="item-description">Hand Bags & More</p>
+            </div>
+          </div>
+          <div class="col-xs-3">
+           <div class="season-container">
+            <img src="http://www.jetsetmorris.co.uk/images/T-Shirt%20Online/TOPMAN%20(6708536)%20White%20Solid%20Round%20Neck%20T-Shirt%20TO207MA68VDRINDFAS%20White.jpg" class="item-img" width="192" height="200">
+           <h4 class="item-catogery" style="font-family: 'Fjalla One', sans-serif;">Hand Bags</h4>
+            <p  class="item-offer">Minimum 50% Off</p>
+            <p  class="item-description">Hand Bags & More</p>
+            </div>
+          </div>
+          <div class="col-xs-3">
+            <div class="season-container">
+            <img src="http://www.tksportsworld.com/global/image/cache/data/polo%20mens/tee%20mens/upper-1-1200x1200.jpg" class="item-img" width="192" height="200">
+           <h4 class="item-catogery" style="font-family: 'Fjalla One', sans-serif;">Hand Bags</h4>
+            <p  class="item-offer">Minimum 50% Off</p>
+            <p  class="item-description">Hand Bags & More</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+          <div class="row">
+          <div class="col-xs-3">
+           <div class="season-container">
+            <img src="https://s-media-cache-ak0.pinimg.com/736x/a6/99/b6/a699b64750807104538021b5691adab5.jpg" class="item-img" width="192" height="200">
+           <h4 class="item-catogery" style="font-family: 'Fjalla One', sans-serif;">Hand Bags</h4>
+            <p  class="item-offer">Minimum 50% Off</p>
+            <p  class="item-description">Hand Bags & More</p>
+            </div>
+          </div>
+            <div class="col-xs-3">
+            <div class="season-container">
+            <img src="http://www.reginele.ro/wp-content/uploads/2015/10/0ac07a0ab85e7c6ef62215c6407d4e61.jpg" class="item-img" width="192" height="200">
+           <h4 class="item-catogery" style="font-family: 'Fjalla One', sans-serif;">Hand Bags</h4>
+            <p  class="item-offer">Minimum 50% Off</p>
+            <p  class="item-description">Hand Bags & More</p>
+            </div>
+          </div>
+          <div class="col-xs-3">
+           <div class="season-container">
+            <img src="https://n1.sdlcdn.com/imgs/b/w/i/Rigo-Navy-Round-T-Shirt-SDL252591801-1-f1560.jpg" class="item-img" width="192" height="200">
+           <h4 class="item-catogery" style="font-family: 'Fjalla One', sans-serif;">Hand Bags</h4>
+            <p  class="item-offer">Minimum 50% Off</p>
+            <p  class="item-description">Hand Bags & More</p>
+            </div>
+          </div>
+          <div class="col-xs-3">
+            <div class="season-container">
+            <img src="https://img1.g-star.com/image/private/c_fill,f_auto,h_540,q_80/8760-2757-6385-F01.jpg" class="item-img" width="192" height="200">
+           <h4 class="item-catogery" style="font-family: 'Fjalla One', sans-serif;">Hand Bags</h4>
+            <p  class="item-offer">Minimum 50% Off</p>
+            <p  class="item-description">Hand Bags & More</p>
+            </div>
+          </div>
+             
+        </div>
+        
+      </div>
+    </div>
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <button type="button" class="btn btn-primary btn-round btn-xs">
+        <span aria-hidden="true" class="glyphicon glyphicon-menu-left"></span>
+      </button>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <button type="button" class="btn btn-primary btn-round btn-xs">
+        <span aria-hidden="true" class="glyphicon glyphicon-menu-right"></span>
+      </button>
+    </a>
+  </div>
+</div>
+</div>
+  </div>
+    <style>
+  @import url(http://fonts.googleapis.com/css?family=Varela+Round);
+  
+        .carousel-control {
+  width: 0px;
+  opacity: 1;
+}
+.carousel-control.left {
+  left: 92%;
+  top: -60px;
+}
+.carousel-control.right {
+  right: 3%;
+  top: -60px;
+}
+        .img-responsive{
+            width: 250px;
+            height:250px;
+        }
+        .sub-main{
+display: flex;
+  margin-top:15px;
+  float: left;
+            
+}
+
+.button-two{
+  text-align: center;
+  cursor: pointer;
+  font-size:20px;
+  margin: 0 0 0 10px;
+  border-radius: 4px;
+  background-color:#1f1f1f;
+  border: none;
+  padding: 5px;
+    margin: 5px;
+    color:white;
+  width: 150px;
+  transition: all 0.5s;
+}
+
+
+        .button-two:hover{
+            background: #135ead;
+        }
+
+     
+       
+        input.star{
+  display: none;
+}
+        #Product-Desp p{
+           text-align: left;   
+             word-wrap: break-word;
+   width: 300px;
+        }
+label.star {
+float: right;
+  padding: 1px;
+  font-size: 20px;
+  color: black;
+  transition: all .25s;
+    
+}
+
+input.star:checked ~ label.star:before {
+  content:'\e006';
+  color:#135ead;
+  transition: all .5s;
+}
+
+label.star:hover{
+  color:#135ead;
+  transform: scale(1.3);
+}
+
+label.star:before{
+  content:'\e007';
+  font-family: 'Glyphicons Halflings';
+}
+        #rating{
+            padding:0;
+            font-size:18px;
+        }
+.cart,#myBtn{
+            margin: 8px 8px 8px 30px;
+            background-color: #135ead;
+            padding:0px 25px 1px 25px;
+            color:White;
+            text-transform: lowercase;
+            border:2px solid white;
+            border-radius: 4px;
+            font-weight: bold;
+            font-family: agency fb;
+            font-size:23px;
+        
+        }
+        .cart:hover,#myBtn:hover{
+            background-color: white;
+            color:#135ead;
+        }
+        .navbarcolor a{
+            color:white;
+        }
+         .category-list{
+            font-family: arial;
+            color:white;
+            padding-left: 0px;
+            padding-right:5px;
+            text-align: right;
+            font-size:12px;
+            float: right;
+        }
+        .category-list li{
+            list-style: none;
+            display: inline-flex;
+
+            padding:6px 10px 6px 10px;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+        .modal {
+    display: none; /* Hidden by default */
+    /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 33.5%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    margin-left: 40%;
+ font-family: 'Harmattan', sans-serif;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+        
+ a, a:link {text-decoration:none;}
+.wrap {
+    margin:10 auto;
+    width:300px;
+    border:1px solid #ddd;
+    padding:20px;
+     font-family: 'Harmattan', sans-serif;
+    }
+/*============*/
+.oauth {
+    width:;
+    font-size:0em;
+    }
+    .logo {
+    width:50%;
+    height:80px;
+    display:inline-block;
+    text-align:center;
+    }
+    .fb{
+    background:#3b5998;/*#0267C1; */
+    }
+    .twit{
+    background:#00aced;;
+    }
+    .logo .fa {
+    font-size:24px;
+    line-height:80px;
+    color:white;
+    }
+    .headline, .footer {
+    text-align:center;
+    text-transform:capitalize;
+    color:#a0a0a0;
+    background:#eee;
+    }
+    .headline {
+    font-size:12px; 
+    margin:0;
+    line-height:34px;
+    }
+    .footer {
+        padding:0;
+        font-size:12px; 
+        margin-top:5px;
+        line-height:28px;
+        }
+        span a:link, a:visited {
+        text-decoration:none; 
+        opacity:.8;
+        }
+    form {margin:0;}
+    .field {
+     
+    }
+    .regular {padding:10px 0px}
+    input  {
+    width:100%;
+    color:#777;
+ font-family: 'Harmattan', sans-serif;
+    display:inline-block;
+    border:none;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    outline: none;
+    text-transform:uppercase;
+    }
+    input[type="email"], input[type="password"], input[type="text"] {
+    font-size:18px;
+    line-height:50px;
+    /*padding:10px 0px;*/
+    }
+    .field input[type="submit"]{
+    background:#0267C1;
+    text-align:center;
+    padding:10px 0px;
+    color:white;
+    font-size:24px;
+    width:100%;
+    cursor:pointer;
+    }
+
+::-webkit-input-placeholder {color: #bbb;}
+:-moz-placeholder { color:#bbb; opacity:1;}
+::-moz-placeholder {color:#bbb; opacity:1;}
+:-ms-input-placeholder {color:#bbb;}
+          
+#slider {
+  /*
+    Container width and heights are arbitrary - I just chose what looks best. 
+    For reference, on my site, container is at about 45% width on desktop, 100% on mobile
+*/
+  height: 450px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: column nowrap;
+      flex-flow: column nowrap;
+}
+#slider.full {
+  background: black;
+  top: 0;
+  left: 0;
+  width: 90vw;
+  height: 80vh;
+}
+#slider.full #images img {
+  height: 100%;
+  width: auto;
+  vertical-align: center;
+}
+@media (max-width: 840px) {
+  #slider.full #images img {
+    width: 100%;
+    height: auto;
+  }
+}
+#slider #images {
+  height: 90%;
+  text-align: center;
+  background: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+    z-index: 99;
+}
+#slider #images img {
+  height: 100%;
+}
+@media (max-width: 840px) {
+  #slider #images img {
+    height: auto;
+    width: auto;
+    max-height: 100%;
+    max-width: 100%;
+  }
+}
+#slider #controls {
+  height: 10%;
+  background: #f0f0f0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: row nowrap;
+      flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+#slider #controls div {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: row nowrap;
+      flex-flow: row nowrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+#slider #controls div button {
+  height: 100%;
+}
+#slider #controls div #next {
+  border-right: 2px solid white;
+}
+#slider #controls button {
+  padding: 10px;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #292929;
+  border-left: 2px solid white;
+  width: 50px;
+}
+#slider #controls button:first-of-type {
+  border-left: none;
+}
+#slider #controls button:active, #slider #controls button:hover, #slider #controls button:focus {
+  outline: none;
+}
+#slider #controls button:hover {
+  color:white;
+  background: #135ead;
+}
+#slider #controls #toggle-fullscreen {
+  border-left: 2px solid white;
+}
+#slider #controls #toggle-fullscreen .material-icons {
+  vertical-align: bottom;
+}
+
+        #Product-Name h2{
+             font-family: 'Harmattan', sans-serif;
+            font-size:50px;
+            font-weight: bold;
+        }
+        #price{
+           font-family: 'Harmattan', sans-serif;
+            font-size:30px;
+        }
+    </style>
+    <script>
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on the button, open the modal 
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+$(document).ready(function() {
+  
+  //I.D. all the elements to be used
+  var $last = $("#previous"); //previous button
+  var $next = $("#next"); //next button
+  var $full = $("#toggle-fullscreen"); //full screen toggle button
+  var $car = $("#slider"); //the whole slider
+  var $count = 1; //the current image
+  var $total = 3; //the amount of images
+  
+  // hey, look, I know this isn't the best way to count the images
+  //but for some reason, $("#images img").length isn't returning a value
+  //trouble shooting that later on.
+
+  $("#images img").hide(); //hide all images
+  $("#" + $count).show(); //except the index image
+
+  $last.click(function() {//when the 'last' button is clicked
+    $("#" + $count).fadeOut(300, function() { //fade out the currently shown image
+     
+      if ($count > 1) { //if the count is > 1
+        $count--; //decrement count
+      } else {
+        $count = $total;        //else, loop back around so that the last image is shown
+      }
+      $item = $("#" + $count);   //find the next image
+      $item.fadeIn(300);       //fade in the next image
+    });
+  })
+
+  $next.click(function() {
+    //when the 'next' button is clicked
+    $("#" + $count).fadeOut(300, function() {
+      //fade out the currently shown image
+      
+      //if the count is less than the total amount of image
+      if ($count < $total) {
+        //increment the count
+        $count++;
+      } else {
+        //else, loop back around so that the first image is shown
+        $count = 1;
+      }
+
+      //find the next image
+      $item = $("#" + $count);
+      
+      //fade in the next image
+      $item.fadeIn(300);
+    });
+  })
+
+  $full.click(function() {
+    //when the fullscreen toggle is clicked
+    
+    //if the slider is already full screen
+    if ($car.hasClass('full')) {
+      //remove the fullscreen class
+      $car.removeClass('full');
+      
+      //change the button icon to the 'fullscreen' icon
+      $full.html('<i class="material-icons"><img src="images/zoom.png"></i>');
+    } else {
+      //else, add the fullscreen class
+      $car.addClass('full');
+      
+      //change the button icon to the 'fullscreen exit' icon
+      $full.html('<i class="material-icons"><img src="images/zoomout.png"></i>');
+    }
+  })
+})
+    </script>
+</body>
+
+</html>
